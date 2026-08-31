@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Typing Test Game</title>
+
+ <link rel="stylesheet" href="typing-test.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>⌨️ Typing Test</h1>
+
+    <!-- Statistics -->
+    <div class="stats">
+
+      <div class="stat">
+        <h3>Time</h3>
+        <p id="time">60</p>
+      </div>
+
+      <div class="stat">
+        <h3>WPM</h3>
+        <p id="wpm">0</p>
+      </div>
+
+      <div class="stat">
+        <h3>Accuracy</h3>
+        <p id="accuracy">100%</p>
+      </div>
+
+      <div class="stat">
+        <h3>Errors</h3>
+        <p id="errors">0</p>
+      </div>
+
+    </div>
+
+    <!-- Text that user must type -->
+    <div class="text-display" id="textDisplay"></div>
+
+    <!-- User input -->
+    <textarea
+      id="input"
+      placeholder="Click Start and begin typing here..."
+      disabled
+    ></textarea>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button id="startBtn">Start Test</button>
+      <button id="restartBtn">Restart</button>
+    </div>
+    <!-- Final result -->
+    <div class="result" id="result">
+
+      <h2>🎉 Test Finished!</h2>
+
+      <p>
+        Your WPM:
+        <strong id="finalWpm">0</strong>
+      </p>
+
+      <p>
+        Accuracy:
+        <strong id="finalAccuracy">0%</strong>
+      </p>
+
+      <p>
+        Errors:
+        <strong id="finalErrors">0</strong>
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="typing-test.js"></script>
+
+</body>
+</html>
